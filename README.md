@@ -17,10 +17,6 @@ This project is a dynamic landing page designed to improve user experience by im
 
 ---
 
-## Usage
-
-
-
 ### Steps to Run the Project
 1. Open the `index.html` file directly in your browser by double-clicking it.
 
@@ -28,6 +24,6 @@ This project is a dynamic landing page designed to improve user experience by im
 
 ---
 
-## File Structure
+
 
 
