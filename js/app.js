@@ -35,7 +35,7 @@ const buildNavigation = () => {
 };
 
 /**
- * Add 'active' class to the section in the viewport
+ * Add 'active' class to the section in the viewport and its navigation link
  */
 const setActiveSection = () => {
     sections.forEach(section => {
@@ -44,8 +44,20 @@ const setActiveSection = () => {
         // Check if the section is in the viewport
         if (bounding.top >= 0 && bounding.top <= 300) {
             section.classList.add('active');
+
+            // Highlight the corresponding navigation link
+            const navLink = navBar.querySelector(`a[href="#${section.id}"]`);
+            if (navLink) {
+                navLink.classList.add('active');
+            }
         } else {
             section.classList.remove('active');
+
+            // Remove the highlight from the corresponding navigation link
+            const navLink = navBar.querySelector(`a[href="#${section.id}"]`);
+            if (navLink) {
+                navLink.classList.remove('active');
+            }
         }
     });
 };
@@ -107,5 +119,6 @@ document.addEventListener('scroll', () => {
     handleNavBarVisibility();
     handleScrollToTopButton();
 });
+
 
 
