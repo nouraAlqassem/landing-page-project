@@ -70,5 +70,22 @@
   #scroll-to-top:hover {
     background: #575757;
   }
-  
+   
+  /* Highlight the active section */
+section.active {
+  background-color: #f0f8ff; 
+  border: 2px solid #007bff; 
+  transition: background-color 0.3s ease, border 0.3s ease; 
+}
+
+/* Highlight the active navigation link */
+.menu__link.active {
+  color: #fff; 
+  background-color: #007bff; 
+  font-weight: bold; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  transition: all 0.3s ease; 
+}
+
   
