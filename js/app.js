@@ -42,7 +42,11 @@ const setActiveSection = () => {
         const bounding = section.getBoundingClientRect();
 
         // Check if the section is in the viewport
+<<<<<<< HEAD
         if (bounding.top >= 0 && bounding.top <= window.innerHeight / 2) {
+=======
+        if (bounding.top >= 0 && bounding.top <= 300) {
+>>>>>>> 449c246902c9ec4c171cc573feeddc7691bb0651
             section.classList.add('active');
 
             // Highlight the corresponding navigation link
@@ -118,4 +122,11 @@ document.addEventListener('scroll', () => {
     setActiveSection();
     handleNavBarVisibility();
     handleScrollToTopButton();
+<<<<<<< HEAD
 });
+=======
+});
+
+
+
+>>>>>>> 449c246902c9ec4c171cc573feeddc7691bb0651
